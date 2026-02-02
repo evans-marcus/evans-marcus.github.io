@@ -1,0 +1,219 @@
+/* BUTTONS */
+.btn,
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* CARDS */
+.card {
+  background: var(--dark);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* DISH CARDS */
+.dish-card {
+  background: var(--dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.dish-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.dish-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.dish-card:hover .dish-overlay {
+  opacity: 1;
+}
+
+.dish-overlay h3 {
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.dish-card img {
+  transition: transform 0.4s ease;
+}
+
+.dish-card:hover img {
+  transform: scale(1.08);
+}
+
+/* HERO ANIMATIONS */
+.hero h1,
+.hero p,
+.hero .btn-primary {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero p {
+  animation-delay: 0.2s;
+}
+
+.hero .btn-primary {
+  animation-delay: 0.4s;
+}
+
+/* SCROLL CUE */
+.scroll-cue {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-cue span {
+  display: block;
+  width: 22px;
+  height: 36px;
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  position: relative;
+}
+
+.scroll-cue span::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollDot 1.6s infinite;
+}
+
+/* KEYFRAMES */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollDot {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 14px); }
+}
+
+.timeline {
+  list-style: none;
+  margin-top: 3rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--gold);
+}
+
+.timeline li {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--muted);
+}
+
+.timeline li span {
+  display: block;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.timeline li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: absolute;
+  left: -7px;
+  top: 6px;
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered feel (optional but sexy) */
+.reveal.delay-1 { transition-delay: 0.2s; }
+.reveal.delay-2 { transition-delay: 0.4s; }
+.reveal.delay-3 { transition-delay: 0.6s; }

@@ -1,0 +1,20 @@
+:root {
+  /* COLORS */
+  --gold: #c89b3c;
+  --dark: #0e0e0e;
+  --dark-2: #151515;
+  --light: #ffffff;
+  --muted: #9ca3af;
+
+  /* TYPOGRAPHY */
+  --font-main: 'Segoe UI', system-ui, sans-serif;
+
+  /* SPACING */
+  --section-padding: 6rem 1.5rem;
+
+  /* RADIUS */
+  --radius: 12px;
+
+  /* SHADOW */
+  --shadow-soft: 0 20px 40px rgba(0,0,0,0.4);
+}

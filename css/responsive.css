@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .navbar ul {
+    /*display: none;  later we add mobile menu */
+  }
+}
+
+/* MOBILE NAV */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: var(--light);
+}
+
+/* MOBILE BREAKPOINT */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--dark);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+  }
+
+  .nav ul.open {
+    max-height: 420px;
+  }
+
+  .nav ul li {
+    width: 100%;
+    padding: 1.2rem 0;
+    text-align: center;
+    border-top: 1px solid #222;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 8rem 0 5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .scroll-cue {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .dish-card img {
+    height: 200px;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .scroll-cue {
+    display: none;
+  }
+}

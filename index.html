@@ -168,27 +168,48 @@
 
 
   <!-- ================= CONTACT ================= -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Book the Chef</h2>
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Book the Chef</h2>
 
-      <form>
-        <label>Name *</label>
-        <input type="text" name="name" placeholder="Full Name" required>
+    <form 
+      class="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+      <!-- REQUIRED: Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="f44e3a3f-a0ab-49a2-851d-af5a78f419f0">
 
-        <label>Email *</label>
-        <input type="email" name="email" placeholder="Email Address" required>
+      <!-- Optional: Email Subject -->
+      <input type="hidden" name="subject" value="New Chef Booking Request">
 
-        <label>Subject</label>
-        <input type="text" name="subject" placeholder="What's this about?">
-        
-        <label>Message *</label>
-        <textarea name="message" placeholder="Event Details"></textarea>
+      <!-- Optional: Redirect after success -->
+       <input type="hidden" name="redirect" value="thank-you.html"> 
 
-        <button type="submit" class="btn-primary">Send Request</button>
-      </form>
-    </div>
-  </section>
+      <!-- Optional: Spam protection -->
+      <input type="checkbox" name="botcheck" style="display:none">
+
+      <label>Name *</label>
+      <input type="text" name="name" placeholder="Full Name" required>
+
+      <label>Email *</label>
+      <input type="email" name="email" placeholder="Email Address" required>
+
+      <label>Subject</label>
+      <input type="text" name="subject" placeholder="What's this about?">
+
+      <label>Message *</label>
+      <textarea 
+        name="message" 
+        placeholder="Event date, location, number of guests, cuisine…" 
+        required
+      ></textarea>
+
+      <button type="submit" class="btn-primary">Send Request</button>
+    </form>
+  </div>
+</section>
+
 
   <!-- ================= FOOTER ================= -->
   <footer id = footer>

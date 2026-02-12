@@ -72,7 +72,7 @@
     </div>
 
     <div class="about-image">
-      <img src="assets/images/logo.jpg" alt="Chef portrait">
+      <img src="assets/images/hero1.jpg" alt="Chef portrait">
     </div>
   </div>
 </section>
@@ -194,43 +194,47 @@
   <div class="container">
     <h2>Book the Chef</h2>
 
-    <form 
-      class="contact-form"
-      action="https://api.web3forms.com/submit"
-      method="POST"
-    >
-      <!-- REQUIRED: Web3Forms Access Key -->
-      <input type="hidden" name="access_key" value="f44e3a3f-a0ab-49a2-851d-af5a78f419f0">
+    <div class="contact-wrapper">
 
-      <!-- Optional: Email Subject -->
-      <input type="hidden" name="subject" value="New Chef Booking Request">
+      <!-- Image Side -->
+      <div class="contact-image">
+        <img src="assets/images/chef-booking.jpg" alt="Chef preparing a gourmet meal">
+      </div>
 
-      <!-- Optional: Redirect after success -->
-       <input type="hidden" name="redirect" value="thank-you.html"> 
+      <!-- Form Side -->
+      <form 
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New Chef Booking Request">
+        <input type="hidden" name="redirect" value="thank-you.html">
+        <input type="checkbox" name="botcheck" style="display:none">
 
-      <!-- Optional: Spam protection -->
-      <input type="checkbox" name="botcheck" style="display:none">
+        <label>Name *</label>
+        <input type="text" name="name" placeholder="Full Name" required>
 
-      <label>Name *</label>
-      <input type="text" name="name" placeholder="Full Name" required>
+        <label>Email *</label>
+        <input type="email" name="email" placeholder="Email Address" required>
 
-      <label>Email *</label>
-      <input type="email" name="email" placeholder="Email Address" required>
+        <label>Subject *</label>
+        <input type="text" name="subject" placeholder="What's this about?" required>
 
-      <label>Subject *</label>
-      <input type="text" name="subject" placeholder="What's this about?" required>
+        <label>Message *</label>
+        <textarea 
+          name="message" 
+          placeholder="Event date, location, number of guests, cuisine…" 
+          required
+        ></textarea>
 
-      <label>Message *</label>
-      <textarea 
-        name="message" 
-        placeholder="Event date, location, number of guests, cuisine…" 
-        required
-      ></textarea>
+        <button type="submit" class="btn-primary">Send Request</button>
+      </form>
 
-      <button type="submit" class="btn-primary">Send Request</button>
-    </form>
+    </div>
   </div>
 </section>
+
 
 
   <!-- ================= FOOTER ================= -->

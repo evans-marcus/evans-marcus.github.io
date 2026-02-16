@@ -390,3 +390,11 @@
 .slider-controls button:hover {
   background: #c59d5f;
 }
+
+
+.seo-text {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #888;
+  margin: 40px 0 20px;
+}

@@ -392,9 +392,34 @@
 }
 
 
+
+/* ================= SEO TEXT ================= */
 .seo-text {
+  background-color: #888;      /* soft background so it stands out */
+  padding: 2rem 1rem;             /* spacing around text */
+  border-radius: 12px;            /* subtle rounded corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* soft shadow for depth */
+  margin: 3rem 2rem;                 /* space from other sections */
+}
+
+.seo-text .container {
+  max-width: 900px;               /* keeps text from stretching too wide */
+  margin:  auto;                 /* center container */
+}
+
+.seo-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;                /* readable text size */
+  line-height: 1.7;               /* spacing for readability */
+  color: #333;                     /* subtle dark text */
+  margin-bottom: 1rem;
+}
+
+.seo-text p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-text strong {
+  color: #f39c12;                 /* accent color for keywords */
   text-align: center;
-  font-size: 0.95rem;
-  color: #888;
-  margin: 40px 0 20px;
 }

@@ -33,9 +33,10 @@
     <ul id="navMenu">
       <li><a href="#about">About</a></li>
       <li><a href="#specialties">Specialties</a></li>
-      <li><a href="#menu">Signature Dishes</a></li>
+      <li><a href="#packages">Event Packages</a></li>
+      <li><a href="#menu">Daily Menu</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact" class="btn">Book Me</a></li>
+      <li><a href="#contact" class="btn">Book Event</a></li>
     </ul>
   </nav>
 </header>
@@ -47,6 +48,7 @@
   <div class="hero-content">
     <h1>Private Chef in Juja for Events & Gatherings</h1>
     <p>Expertly prepared Kenyan cuisine for birthdays, corporate events, home celebrations & private dining.</p>
+    <p>Available for event bookings and daily plate orders in Juja.</p>
     
     <div class="hero-buttons">
       <a href="#contact" class="btn-primary">Check Availability</a>
@@ -80,29 +82,6 @@ With hands-on kitchen experience and a focus on consistency, presentation, and f
     <div class="about-image">
       <img src="assets/images/hero1.jpg" alt="Chef portrait">
     </div>
-  </div>
-</section>
-
-
-<!-- ================= SPECIALTIES ================= -->
-<section id="specialties" class="section dark">
-  <div class="container grid-3">
-
-    <div class="card specialty-card">
-      <img src="assets/images/fine-dining.jpeg" alt="Fine Dining">
-      <div class="card-overlay">Fine Dining</div>
-    </div>
-
-    <div class="card specialty-card">
-      <img src="assets/images/african-fusion.jpeg" alt="African Fusion">
-      <div class="card-overlay">African Fusion</div>
-    </div>
-
-    <div class="card specialty-card">
-      <img src="assets/images/private-events.jpeg" alt="Private Events">
-      <div class="card-overlay">Private Events</div>
-    </div>
-
   </div>
 </section>
 
@@ -152,43 +131,10 @@ With hands-on kitchen experience and a focus on consistency, presentation, and f
   </div>
 </section>
 
-<!-- ================= WHY BOOK ME ================= -->
-<section id="why" class="section dark">
-  <div class="container">
-    <h2>Why Book Mercado Flavours</h2>
-
-    <div class="grid-4">
-
-      <div class="feature">
-        <i class="fa-solid fa-kitchen-set"></i>
-        <h4>Experienced & Professional</h4>
-      </div>
-
-      <div class="feature">
-        <i class="fa-solid fa-clock"></i>
-        <h4>Reliable & Time-Conscious</h4>
-      </div>
-
-      <div class="feature">
-        <i class="fa-solid fa-utensils"></i>
-        <h4>Personalized Menu Planning</h4>
-      </div>
-
-      <div class="feature">
-        <i class="fa-brands fa-whatsapp"></i>
-        <h4>Fast WhatsApp Response</h4>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- ================= SIGNATURE DISHES ================= -->
+<!-- ================= SIGNATURE DISHES ================= -->
   <section id="menu" class="section">
     <div class="container">
-      <h2>Signature Dishes</h2>
+      <h2>Daily Menu – Available for Pickup & Orders</h2>
 
       <div class="grid-3">
         <div class="dish-card">
@@ -250,6 +196,60 @@ With hands-on kitchen experience and a focus on consistency, presentation, and f
     </div>
   </section>
 
+<!-- ================= SPECIALTIES ================= -->
+<section id="specialties" class="section dark">
+  <div class="container grid-3">
+
+    <div class="card specialty-card">
+      <img src="assets/images/fine-dining.jpeg" alt="Fine Dining">
+      <div class="card-overlay">Fine Dining</div>
+    </div>
+
+    <div class="card specialty-card">
+      <img src="assets/images/african-fusion.jpeg" alt="African Fusion">
+      <div class="card-overlay">African Fusion</div>
+    </div>
+
+    <div class="card specialty-card">
+      <img src="assets/images/private-events.jpeg" alt="Private Events">
+      <div class="card-overlay">Private Events</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= WHY BOOK ME ================= -->
+<section id="why" class="section dark">
+  <div class="container">
+    <h2>Why Book Mercado Flavours</h2>
+
+    <div class="grid-4">
+
+      <div class="feature">
+        <i class="fa-solid fa-kitchen-set"></i>
+        <h4>Experienced & Professional</h4>
+      </div>
+
+      <div class="feature">
+        <i class="fa-solid fa-clock"></i>
+        <h4>Reliable & Time-Conscious</h4>
+      </div>
+
+      <div class="feature">
+        <i class="fa-solid fa-utensils"></i>
+        <h4>Personalized Menu Planning</h4>
+      </div>
+
+      <div class="feature">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h4>Fast WhatsApp Response</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- ================= EXPERIENCE ================= -->
   <section id="experience" class="section dark">
   <div class="container">
@@ -294,7 +294,7 @@ With hands-on kitchen experience and a focus on consistency, presentation, and f
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
         </div>
-        <small>Based on 18 reviews</small>
+        
       </div>
     </div>
 
@@ -431,8 +431,8 @@ With hands-on kitchen experience and a focus on consistency, presentation, and f
         <label>Email *</label>
         <input type="email" name="email" placeholder="Email Address" required>
 
-        <label>Subject *</label>
-        <input type="text" name="subject" placeholder="What's this about?" required>
+        <label>Event Type *</label>
+        <input type="text" name="event_type" placeholder="Birthday, Graduation, Corporate..." required>
 
         <label>Message *</label>
         <textarea 

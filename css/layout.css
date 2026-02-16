@@ -661,3 +661,14 @@ footer {
 .feature:hover {
   transform: translateY(-6px);
 }
+/* Style for all section headings */
+.section h2 {
+  font-family: 'Poppins', sans-serif;  /* match your other headings */
+  font-size: 2rem;                     /* adjust to match other h2s */
+  font-weight: 600;                    /* semi-bold like other headings */
+  
+  text-align: center;                  /* center align headings */
+  margin-bottom: 2rem;                 /* spacing below heading */
+  position: relative;                  /* for optional underline */
+}
+
